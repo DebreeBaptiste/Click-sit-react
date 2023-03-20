@@ -1,0 +1,211 @@
+/* GLOBAL-NAVBAR */
+
+.global-navbar-root {
+  /* HEADER VARIABLE */
+  --global-navbar-height: var(--space-50);
+  --mobile-logo-width: var(--space-22);
+  --mobile-logo-height: var(--space-23);
+  --desktop-logo-width: var(--space-40);
+  --desktop-logo-height: var(--space-38);
+  --loading-logo-dimension: var(--space-60);
+  /* SELF-LAYOUT */
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  /* APPEARANCE */
+
+  background-color: var(--white);
+  /* MISCELLANEAOUS */
+  transform: translateY(calc(-100vh + var(--global-navbar-height)));
+  transition: transform 0.6s ease-in-out;
+  /* INNER-LAYOUT */
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+  align-content: end;
+  /* TEXT */
+
+  /* MEDIA QUERIES */
+  @media (min-width: 800px) {
+    & {
+      /* SELF-LAYOUT */
+
+      /* APPEARANCE */
+
+      /* MISCELLANEAOUS */
+
+      /* INNER-LAYOUT */
+      padding-left: var(--space-20);
+      padding-right: var(--space-20);
+
+      /* TEXT */
+    }
+  }
+  @media (min-width: 1200px) {
+    & {
+      /* SELF-LAYOUT */
+
+      /* APPEARANCE */
+
+      /* MISCELLANEAOUS */
+
+      /* INNER-LAYOUT */
+      padding-left: var(--space-26);
+      padding-right: var(--space-26);
+
+      /* TEXT */
+    }
+  }
+  &.samsungBrowser {
+    /* SELF-LAYOUT */
+
+    /* APPEARANCE */
+
+    /* MISCELLANEAOUS */
+    transform: translateY(-100vh);
+    /* INNER-LAYOUT */
+
+    /* TEXT */
+  }
+  &.loading-true {
+    /* SELF-LAYOUT */
+    position: fixed;
+    top: 0;
+    /* APPEARANCE */
+
+    /* MISCELLANEAOUS */
+    transform: translateY(0);
+    /* INNER-LAYOUT */
+
+    /* TEXT */
+  }
+}
+
+.global-navbar-container {
+  /* SELF-LAYOUT */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: var(--global-navbar-height);
+
+  /* APPEARANCE */
+  background-color: white;
+  /* MISCELLANEAOUS */
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+  /* INNER-LAYOUT */
+
+  /* TEXT */
+
+  &.loading-true {
+    /* SELF-LAYOUT */
+
+    /* APPEARANCE */
+
+    /* MISCELLANEAOUS */
+    transform: translateY(-50vh);
+    /* INNER-LAYOUT */
+
+    /* TEXT */
+  }
+}
+
+.global-navbar-logo {
+  /* SELF-LAYOUT */
+
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  width: var(--mobile-logo-width);
+  height: var(--mobile-logo-height);
+  z-index: 1;
+  /* APPEARANCE */
+
+  /* MISCELLANEAOUS */
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1);
+  /* INNER-LAYOUT */
+
+  /* TEXT */
+
+  /* MEDIA QUERIES */
+  @media (min-width: 1200px) {
+    & {
+      /* SELF-LAYOUT */
+      width: var(--desktop-logo-width);
+      height: var(--desktop-logo-height);
+
+      /* APPEARANCE */
+
+      /* MISCELLANEAOUS */
+
+      /* INNER-LAYOUT */
+
+      /* TEXT */
+    }
+  }
+  &.loading-true {
+    /* SELF-LAYOUT */
+    width: var(--loading-logo-dimension);
+    height: var(--loading-logo-dimension);
+    /* APPEARANCE */
+
+    /* MISCELLANEAOUS */
+    animation: loader 0.8s infinite;
+    transform: scale(1);
+    /* INNER-LAYOUT */
+
+    /* TEXT */
+  }
+  @keyframes loader {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+  }
+}
+
+.global-navbar-langage-button {
+  /* SELF-LAYOUT */
+  display: grid;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+  width: 38px;
+  height: 22px;
+
+  /* APPEARANCE */
+  opacity: 1;
+  cursor: pointer;
+  border-style: solid;
+  border-color: var(--gray-900);
+  border-radius: 4px;
+  background-color: var(--white);
+  /* MISCELLANEAOUS */
+  transition: opacity 1s ease;
+  /* INNER-LAYOUT */
+  align-content: center;
+
+  /* TEXT */
+  font-family: "Jost";
+  text-transform: uppercase;
+  color: var(--gray-900);
+
+  &.loading-true {
+    /* SELF-LAYOUT */
+
+    /* APPEARANCE */
+    opacity: 0;
+    /* MISCELLANEAOUS */
+
+    /* INNER-LAYOUT */
+
+    /* TEXT */
+  }
+}

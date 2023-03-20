@@ -1,0 +1,106 @@
+/* GLOBAL */
+
+:root {
+  /* TEXT */
+  --text-xxs: 12px;
+  --text-xs: 14px;
+  --text-s: 16px;
+  --text-sm: 18px;
+  --text-lg: 22px;
+  --text-xl: 30px;
+  --text-2xl: 42px;
+
+  /* FONT-WEIGHT */
+  --font-300: 300;
+  --font-400: 400;
+  --font-500: 500;
+  --font-600: 600;
+  --font-800: 800;
+  --font-900: 900;
+
+  /* SCROLL EFFET */
+  scroll-behavior: smooth;
+
+  /* COLOR */
+  --gray-900: #172439;
+  --gray-300: #d1d5db;
+  --gray-100: #f3f4f6;
+  --grayCool-50: #f9fafb;
+  --white: #ffffff;
+  --black: #000000;
+  --blackOpacity: rgba(0, 0, 0, 0.5);
+
+  /* BOX-SHADOW */
+  --shadow-sm: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* SPACING */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-22: 22px;
+  --space-23: 23px;
+  --space-26: 26px;
+  --space-30: 30px;
+  --space-32: 32px;
+  --space-34: 34px;
+  --space-38: 38px;
+  --space-40: 40px;
+  --space-42: 42px;
+  --space-48: 48px;
+  --space-50: 50px;
+  --space-54: 54px;
+  --space-60: 60px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-85: 85px;
+  --space-86: 86px;
+  --space-90: 90px;
+  --space-92: 92px;
+  --space-96: 96px;
+  --space-128: 128px;
+  --space-160: 160px;
+  --space-210: 210px;
+  --space-280: 280px;
+  --space-300: 300px;
+  --space-400: 400px;
+  --space-500: 500px;
+  --space-600: 600px;
+}
+
+/* Prevent strange behavior on navbar, appended with mobile navigator UI */
+
+body {
+  /* SELF-LAYOUT */
+  position: fixed;
+  /* APPEARANCE */
+
+  /* MISCELLANEAOUS */
+  overflow: hidden;
+  /* INNER-LAYOUT */
+
+  /* TEXT */
+}
+
+#root {
+  /* SELF-LAYOUT */
+  position: relative;
+  height: 100svh;
+  /* APPEARANCE */
+
+  /* MISCELLANEAOUS */
+  overflow: scroll;
+  scroll-behavior: smooth;
+  /* INNER-LAYOUT */
+
+  /* TEXT */
+}

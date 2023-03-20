@@ -1,0 +1,17 @@
+/* RESET */
+
+* {
+    /* SELF-LAYOUT */
+    margin: 0;
+    box-sizing: border-box;
+    /* APPEARANCE */
+    -webkit-appearance: none; /* Remove appearance of button and input on iOS */
+    -webkit-tap-highlight-color: transparent; /* Removes the grey highlight on clickable elements on iOS */
+    -webkit-text-size-adjust: 100%; /* prevent adjustments of font size after orientation changes in iOS */
+    padding: 0;
+    /* MISCELLANEAOUS */
+    
+    /* INNER-LAYOUT */
+
+    /* TEXT */
+}
