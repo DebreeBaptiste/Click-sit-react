@@ -51,7 +51,10 @@ const App = () => {
 	};
 
 	// FOR SAMSUNG INTERNET BROWSER BEHAVIOR
-	samsungBrowserSupport(modalOpen);
+	useEffect(() => {
+
+		samsungBrowserSupport(modalOpen);
+	}, [modalOpen]);
 
 	return (
 		<LanguageContext.Provider value={{ language, toggleLanguage }}>
