@@ -1,8 +1,8 @@
 <h2 align="center">L'application Click&Sit</h2>
 
 <p><strong>Stack utilisée : </strong>HTML/SCSS/REACT</p>
-  <p>Projet d'une application d'un menu de restaurant.</br> 
-  Cette application a pour but de faciliter le choix des plats pour les personnes sujettes aux intolérances.</p>
+  <p>Projet d'une application d'un menu de restaurant intéractif.</br> 
+  Cette application a pour but de faciliter le choix de plats pour les personnes sujettes aux intolérances.</p>
  
   <p>Assis à la table d'un restaurant, on scanne le QR code qui nous dirige sur cette application.</br>
   A l'appuie sur un des plats, une modale s'ouvre avec deux onglets "ingredients" et "Allergènes".</br>
